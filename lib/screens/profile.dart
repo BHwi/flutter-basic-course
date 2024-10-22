@@ -179,6 +179,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   /////// Additional Assignment ///////
   /////////////////////////////////////
   void addDialog(context) {
+    // use dialog
     showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
