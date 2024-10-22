@@ -45,7 +45,23 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(
+          title:
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Image.asset(
+          'assets/images/logo.png',
+          height: 30,
+        ),
+        const Row(
+          children: [
+            Icon(Icons.favorite_border),
+            SizedBox(
+              width: 16,
+            ),
+            Icon(Icons.send_rounded)
+          ],
+        )
+      ])),
       body: ListView.builder(
         itemCount: posts.length,
         itemBuilder: (context, index) {
