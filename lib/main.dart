@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
+import 'screens/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreen(),
     MyHomePage(title: 'Explore'),
     MyHomePage(title: 'Upload'),
-    MyHomePage(title: 'Profile'),
+    ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {
